@@ -39,9 +39,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "autoload": {
-        "files": ["vendor/autoload_52.php"]
-    },
     "extra": {
         "phar-builder": {
             "compression": "BZip2",
