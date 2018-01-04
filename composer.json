@@ -1,7 +1,7 @@
 {
     "name": "treffynnon/php52-phpunit",
     "type": "library",
-    "license": "BSD-3-Clause",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Simon Holywell",
