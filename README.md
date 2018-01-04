@@ -17,7 +17,13 @@ Clone this repo down and run
 
     composer run-script build
 
-You'll now have phpunit-php52.phar in the directory
+You'll now have phpunit-php52.phar in the directory.
+
+If you get a warning from Box about phar.readonly you re-run the command with
+
+    php -d phar.readonly=off composer run-script build
+
+or you can disable it permanently you php.ini file.
 
 ## Run it against your tests
 
