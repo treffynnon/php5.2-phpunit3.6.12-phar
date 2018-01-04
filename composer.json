@@ -12,7 +12,7 @@
 		"vendor/bin/phpunit-php52"
     ],
     "scripts": {
-        "build": "php -d phar.readonly=off vendor/bin/box build -c box.json",
+        "build": "php -d phar.readonly=off $(realpath .)/vendor/bin/box build -c box.json",
 		"post-install-cmd": [
             "xrstf\\Composer52\\Generator::onPostInstallCmd"
 		],
