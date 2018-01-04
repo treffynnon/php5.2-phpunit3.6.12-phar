@@ -1,0 +1,14 @@
+{
+    "compression": "BZ2",
+    "algorithm": "SHA512",
+    "stub": true,
+    
+    "base-path": "vendor",
+    "directories": ".",
+    "main": "bin/phpunit-php52",
+
+    "output": "phpunit-php52.phar",
+    "chmod": "0755",
+
+    "web": false
+}

@@ -1,0 +1,59 @@
+{
+    "name": "treffynnon/php52-phpunit",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Simon Holywell",
+            "email": "treffynnon@php.net"
+        }
+    ],
+    "bin": [
+		"vendor/bin/phpunit-php52"
+    ],
+    "scripts": {
+        "build": "php -d phar.readonly=off vendor/bin/box build -c box.json",
+		"post-install-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+		],
+		"post-update-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+		],
+		"post-autoload-dump": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+		]
+	},
+    "require": {
+        "phpunit/phpunit-php52": "dev-3.6.12-php52",
+        "phpunit/phpunit-mock-objects-php52": "dev-1.1.0-php52"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/garex/phpunit"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/garex/phpunit-mock-objects"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": ["vendor/autoload_52.php"]
+    },
+    "extra": {
+        "phar-builder": {
+            "compression": "BZip2",
+            "name": "php52-phpunit.phar",
+            "include": ["vendor/bin"],
+            "events": {
+                "build.after": [
+                    "chmod +x php52-phpunit.phar"
+                ]
+            }
+        }
+    },
+    "require-dev": {
+        "bamarni/composer-bin-plugin": "^1.1@dev"
+    }
+}
