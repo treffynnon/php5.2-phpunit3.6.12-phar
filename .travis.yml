@@ -11,8 +11,8 @@ before_install: |
   phpenv config-rm xdebug.ini
   cat ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
 install: composer install
-after_install: php -i | grep bz
-before_script: echo 'phar.readonly = Off' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+before_script: php -i | grep bz
+#before_script: echo 'phar.readonly = Off' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
 script: composer build
 
 deploy:
