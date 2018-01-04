@@ -28,6 +28,9 @@
         "phpunit/phpunit-php52": "dev-3.6.12-php52",
         "phpunit/phpunit-mock-objects-php52": "dev-1.1.0-php52"
     },
+    "require-dev": {
+        "bamarni/composer-bin-plugin": "^1.1@dev"
+    },
     "repositories": [
         {
             "type": "git",
@@ -38,20 +41,5 @@
             "url": "https://github.com/garex/phpunit-mock-objects"
         }
     ],
-    "minimum-stability": "dev",
-    "extra": {
-        "phar-builder": {
-            "compression": "BZip2",
-            "name": "php52-phpunit.phar",
-            "include": ["vendor/bin"],
-            "events": {
-                "build.after": [
-                    "chmod +x php52-phpunit.phar"
-                ]
-            }
-        }
-    },
-    "require-dev": {
-        "bamarni/composer-bin-plugin": "^1.1@dev"
-    }
+    "minimum-stability": "dev"
 }

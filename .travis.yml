@@ -10,7 +10,7 @@ cache:
 before_install: phpenv config-rm xdebug.ini
 install: composer install
 before_script: echo 'phar.readonly = Off' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
-script: composer build
+script: vendor/bin/box build -c box.json
 
 deploy:
   provider: releases
