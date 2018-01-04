@@ -8,7 +8,8 @@ cache:
   - vendor
 
 before_install: |
-  apt-get install php7.1-bz2
+  sudo apt-get update -qq
+  sudo apt-get install -y php7.1-bz2
   phpenv config-rm xdebug.ini
 install: composer install
 before_script: echo 'phar.readonly = Off' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
