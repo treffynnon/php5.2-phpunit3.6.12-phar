@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "87815b558ecafa773ab8f0a5321453f3",
+    "content-hash": "7f980d073c6acbe328660192d14af1e9",
     "packages": [
         {
             "name": "phpunit/php-code-coverage",
@@ -402,53 +402,12 @@
             "time": "2016-04-16T21:52:24+00:00"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "bamarni/composer-bin-plugin",
-            "version": "v1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bamarni/composer-bin-plugin.git",
-                "reference": "62fef740245a85f00665e81ea8f0aa0b72afe6e7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bamarni/composer-bin-plugin/zipball/62fef740245a85f00665e81ea8f0aa0b72afe6e7",
-                "reference": "62fef740245a85f00665e81ea8f0aa0b72afe6e7",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0"
-            },
-            "require-dev": {
-                "composer/composer": "dev-master",
-                "symfony/console": "^2.5 || ^3.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Bamarni\\Composer\\Bin\\Plugin",
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Bamarni\\Composer\\Bin\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "time": "2017-09-11T13:13:58+00:00"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "phpunit/phpunit-php52": 20,
-        "phpunit/phpunit-mock-objects-php52": 20,
-        "bamarni/composer-bin-plugin": 20
+        "phpunit/phpunit-mock-objects-php52": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
