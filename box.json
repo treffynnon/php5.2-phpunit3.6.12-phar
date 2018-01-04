@@ -7,7 +7,7 @@
     "directories": ".",
     "main": "bin/phpunit-php52",
 
-    "output": "phpunit-php52.phar",
+    "output": "php52-phpunit.phar",
     "chmod": "0755",
 
     "web": false

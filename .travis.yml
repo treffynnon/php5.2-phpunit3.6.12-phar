@@ -1,0 +1,16 @@
+language: php
+php:
+  - 7.1
+
+before_script: composer install
+script: composer run-script build
+
+deploy:
+  provider: releases
+  api_key:
+    secure: avckrP05hpYtVW0LyKcgLPn2xS7p5vUnpsbQsVkxzMtrlXZj2RPs6HRLZ9s6pIPaKVkTOckpTA4YzInFJ81rA+CWlY8dhzcpBbPy135QNDUhYUvr9EKP/5iTOGCjXk+LckL6FrbRSHF3Rkz4t5BIVpLu2/jYABxoUmzxFOWJbbn/uRRN8CvUbKGHgIyy9a/6Xyduzm4kKJNFhtZ6a4eNWdkfx6/il5e1jYi2odXOt5drmXf/v7quVrZ/LAQXVOJaRyTVF3Ds/8Go2mUbq9H4nKZlCuRzk31IWQpGSCgZ6AcXcX6qnD+jMTs+NXDKRDlHKYhT7JxDq9E3dcheBD8RgdCDfw8Sy+Z/3+Dsa09C+0tg6qHBkP0V3s8ogvOptRwkswAGEUGp68ei0CaWqY1zQ8N0n76PSd7ymL7FkmC4AqlS1al/z1bSoD0nKFQo8hpbxQfFUk+WR47R+TnRZ0gb6rn/2zUmvZZI9jarnxOn4JuzyXT5dGLOEautob2oUUbgLYzdEV23Ti6uH9FFhtfzM2jxbyYtDTKJkbGlOcIYusyZVU4AMuuZyPRtGfCi50NAb4TZ6h/+37YztbVrTLjilaucKiisSt6Sj5b3g+Hf6/lC6AShzC0o08Z+CUAbMlvtV8d3YzUYhdgznSrP8uOXdycI8WsHYEKhSn5Liyy13aU=
+  file: php52-phpunit.phar
+  skip_cleanup: true
+  on:
+    repo: treffynnon/php5.2-phpunit3.6.12-phar
+    tags: true
