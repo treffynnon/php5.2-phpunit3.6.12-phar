@@ -1,5 +1,7 @@
 # phpunit for PHP 5.2
 
+[![Build Status](https://travis-ci.org/treffynnon/php5.2-phpunit3.6.12-phar.svg?branch=master)](https://travis-ci.org/treffynnon/php5.2-phpunit3.6.12-phar)
+
 Generate a phar file from phpunit 3.6.12 (the last version to support
 PHP 5.2).
 
@@ -54,7 +56,7 @@ before_install: pecl install phar
 install: |
   export X="$HOME/.build-deps/bin"
   mkdir -p "$X"
-  curl -sSfL https://github.com/treffynnon/php5.2-phpunit3.6.12-phar/releases/download/1.0.0/php52-phpunit.phar -o "$X/phpunit"
+  curl -sSfL https://github.com/treffynnon/php5.2-phpunit3.6.12-phar/releases/download/1.0.2/php52-phpunit.phar -o "$X/phpunit"
   chmod +x "$X/phpunit"
 script: $X/phpunit --colors --coverage-text
 ```
