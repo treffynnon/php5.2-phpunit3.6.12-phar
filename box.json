@@ -1,14 +1,27 @@
 {
-    "compression": "BZ2",
-    "algorithm": "SHA512",
-    "stub": true,
-    
-    "base-path": "vendor",
-    "directories": ".",
-    "main": "bin/phpunit-php52",
+  "compression": "BZ2",
+  "algorithm": "SHA512",
+  "stub": true,
+  "web": false,
 
-    "output": "php52-phpunit.phar",
-    "chmod": "0755",
+  "base-path": "vendor",
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": [
+        "Tests",
+        "Test",
+        "tests",
+        "test",
+        "xrstf",
+        "bamarni"
+      ],
+      "in": "."
+    }
+  ],
+  "main": "bin/phpunit-php52",
 
-    "web": false
+  "git-version": "package_version",
+  "output": "php52-phpunit.phar",
+  "chmod": "0755"
 }
