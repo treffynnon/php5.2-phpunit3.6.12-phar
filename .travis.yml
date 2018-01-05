@@ -4,9 +4,9 @@ php:
 
 cache:
   directories:
-  - $HOME/.composer/cache
-  - vendor
-  - vendor-bin/box/vendor
+    - $HOME/.composer/cache
+    - vendor
+    - vendor-bin/box/vendor
 
 before_install: phpenv config-rm xdebug.ini
 install: composer install
